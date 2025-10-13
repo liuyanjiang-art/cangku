@@ -11,3 +11,5 @@
 # - You'll need to check each character to see if it's a letter
 # - Dictionary pattern: if key exists, increment; if not, set to 1
 # - Consider converting to lowercase for consistent counting
+
+#this is a test
