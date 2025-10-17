@@ -11,3 +11,8 @@
 
 # print out the answer
 
+number1=input(int('number1:'))
+
+number2=input(int('number2:'))
+result1=number1+number2
+print(result1)

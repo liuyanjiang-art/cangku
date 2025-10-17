@@ -14,3 +14,15 @@
 
 # Download your file, and upload it to the 'Week 1 Session 2 - Practice Upload' task on Minerva.
 # You will get some feedback - ensure you are passing the tests!
+# 提示用户输入两个数字
+while True:
+    try:
+        num1 = int(input("请输入第一个整数："))
+        num2 = int(input("请输入第二个整数："))
+        break
+    except ValueError:
+        print("'That is not a number', and exits.")
+
+# 计算并打印乘积
+result = num1 * num2
+print(f"两个数的乘积是：{result}")
