@@ -23,3 +23,7 @@ def evaluate_expression(expression, x=0, y=0, **kwargs):
     To get started with this task, you can have a look at Python built-in
     function eval that will return the results of an evaluated expression.
     """
+def evaluate_expression(expression, x=0, y=0, **kwargs):
+    variables = {'x': x, 'y': y, **kwargs}  # 合并所有变量
+    return eval(expression, {}, variables)  # 安全计算表达式
+

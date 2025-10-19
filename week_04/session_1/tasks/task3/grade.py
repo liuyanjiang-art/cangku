@@ -32,8 +32,23 @@ def calculate_grade(marks):
         None: If `marks` is not a valid integer or is outside the allowed
               range (greater than 100 or negative)
     """
-
-    return grade
+    
+    if not isinstance(marks, int):
+        return None
+    
+    if marks < 0 or marks > 100:
+        return None
+    
+    if marks >= 80:
+        return 'A'
+    elif marks >= 70:
+        return 'B'
+    elif marks >= 60:
+        return 'C'
+    elif marks >= 50:
+        return 'D'
+    else:
+        return 'F'
 
 
 # Check if the following lines produce the correct output

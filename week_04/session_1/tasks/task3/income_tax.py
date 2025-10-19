@@ -35,6 +35,38 @@ def income_tax_calculator(annual_income):
     """
 
 
+def income_tax_calculator(annual_income):
+    """
+    Calculates UK income tax based on progressive tax bands.
+    """
+    # Handle non-positive income
+    if annual_income <= 0:
+        return 0.0
+    
+    tax = 0.0
+    remaining_income = annual_income
+    
+    # Tax bands: (upper_limit, rate)
+    bands = [
+        (12570, 0.0),    # Personal allowance
+        (50270, 0.2),    # Basic rate
+        (125140, 0.4),   # Higher rate
+        (float('inf'), 0.45)  # Additional rate
+    ]
+    
+    prev_limit = 0
+    for limit, rate in bands:
+        if remaining_income <= 0:
+            break
+        # Calculate taxable amount in current band
+        taxable_in_band = min(remaining_income, limit - prev_limit)
+        tax += taxable_in_band * rate
+        # Update remaining income and previous limit
+        remaining_income -= taxable_in_band
+        prev_limit = limit
+    
+    return round(tax, 1)
+
 # Check if the following lines produce the correct output
 print(income_tax_calculator(12000))     # 0.0
 print(income_tax_calculator(14000))     # 286.0

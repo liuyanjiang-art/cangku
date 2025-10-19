@@ -3,6 +3,10 @@
 # You are given the function mystery_func. Inspect the code in the function
 # and your task is to write a corresponding docstrings here on
 # what the function does and what is the return value.
+'''[0, 3]
+[3, 13]
+[0, 0]
+[3, 0]'''
 
 
 def mystery_func(string):

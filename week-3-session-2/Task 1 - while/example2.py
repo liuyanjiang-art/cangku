@@ -5,4 +5,4 @@ while fruit :
 	print( fruit.pop() )
     
 # Why does this work?
-# What features of Python does it rely on?
+# What features of Python does it rely on?bool
