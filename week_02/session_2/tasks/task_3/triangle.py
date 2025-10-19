@@ -9,9 +9,9 @@ side3 = float(input("Enter the length of the third side: "))
 
 # Conditional block to check the type of triangle
 
-if XXX:
+if side1==side2==side3:
     print("This is an equilateral triangle.")
-elif XXX:
+elif side1==side2 or side1==side3 or side2==side3 :
     print("This is an isosceles triangle.")
-elif XXX:
+else:
     print("This is a scalene triangle.")

@@ -16,10 +16,10 @@ password = input("Enter your password: ")
 
 # Conditional block for login authentication
 
-if XXX:
-    if XXX:
+if correct_username == "user123" and correct_password == "password456":
+    if two_factor_enabled == True:
         two_factor_code = input("Enter the 2FA code sent to your device: ")
-        if XXX:
+        if two_factor_code =="7890":
             print("Login successful! Welcome!")
         else:
             print("Invalid two-factor authentication code. Access denied.")

@@ -3,5 +3,10 @@
 from pprint import pprint
 
 # Create music database, as a dictionary of strings mapped to lists
+music_data= {
+    "rock":['a','b'],
+    "pop":['c','d']
+}
 
 # Pretty-print the data structure
+pprint(music_data)
