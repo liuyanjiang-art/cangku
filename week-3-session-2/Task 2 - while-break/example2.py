@@ -7,6 +7,9 @@ while True :
     
     user_input = input( "Say something: " )
     print( f"You said: {user_input}" )
+    if user_input=='quit':
+        break
+        
     
     
 # As written the program has an infinite loop.
