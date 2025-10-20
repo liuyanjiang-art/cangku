@@ -42,3 +42,4 @@ while True:
     if another != 'y':
         print("程序结束，再见！👋")
         break
+#哈哈哈
